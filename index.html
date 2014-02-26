@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Puro D3!!!</title>
+	<link rel="stylesheet" type="text/css" href="bower_components/prism/themes/prism-tomorrow.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css"><link rel="stylesheet" type="text/css" href="styles/crossfilter.css">
+</head>
+<body>
+<article>
+<section class="blue"><h1><span class="big-text"> D3.js</span></br></br>Introducción</h1></section>
+<section class="blue"><h1>Los datos se convirtieron en el nuevo petroleo, si no los refinas no tienen mucho valor.</h1></section>
+<section class="gray"><div><img src="img/analytic-board-logo.png"></div></br><div><h2>leonardocongote@ingeniosolido.com</br>@leocongote</h2><span class="short_s-text">
+<a href="http://www.ingeniosolido.com">http://www.ingeniosolido.com</a>
+</br>
+<a href="http://analyticboard.com/">http://analyticboard.com/</a>
+</span>
+</div></br><div class="bt-right"><img src="img/ingenio-solido-logo.png"></div>
+</section>
+<section class="blue"><h1>Qué es<span class="big-text"> D3.js?</span></h1></section>
+<section class="blue"><h1>Qué <span class="med-text"> NO</span> es <span class="med-text"> D3.js</span>?</h1></section>
+<section class="gray"><h1><span class="med_s-text"> NO es una librería de charts</span>, aunque se pueden hacer charts</h1></section>
+<section class="gray"><h1><span class="med_s-text"> NO es una librería de mapas</span>, aunque se pueden hacer mapas</h1></section>
+<section class="gray"><h1><span class="med_s-text"> NO es una capa de abstracción de SVG o Canvas</span>, aunque puedes usarlos</h1></section>
+<section class="blue"><h1>Qué es<span class="big-text"> D3.js?</span></h1></section>
+<section class="blue"><h1><span class="med-text"> D</span>ata <span class="med-text"> D</span>riven <span class="med-text"> D</span>ocuments!!!</h1></section>
+<section class="white"><h1><span class="med_s-text">Crux:MEOLLO</span></h1><h2>Manipulación eficiente de documentos basados en datos.</h2><h2>Traer datos a la vida usando HTML, canvas, GEOjson, Topojoson, SVG y CSS</h2> </section>
+<section class="blue"><h1>Para realizar cualquier tipo de</br></br></br><span class="med_b-text">visualización</span></h1></section>
+<section class="mapa"><h1><span class="big-text"> Mapas</span></h1></section>
+<section class="gray"><h1><span class="med_s-text"> GeoJson</h1><h2>GeoJson es un formato para codificar Datos geográficos en formas geometricas como: Puntos, Líneas, Poligonos….
+</h2><code class="language-javascript"><pre>{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [125.6, 10.1]
+  },
+  "properties": {
+    "name": "Dinagat Islands"
+  }
+}
+</pre></code></section>
+<section class="gray"><h1><span class="med_s-text"> GeoJson vs TopoJson</h1><h2>TopoJson 80% mas pequeño que GeoJson
+</h2></section>
+<section class="gray"><h1><span class="med-text"> Fuentes de Datos</span></h1><h2><a href="http://www.naturalearthdata.com/">Natural Earth Data</a></h2></section>
+<section class="gray"><h1><span class="med-text"> Herramientas</span></h1><h2><a href="http://www.mapshaper.org/">Map Shaper</a></h2><h2>ogr2ogr</h2><h2>Topojson</h2><h2>Queue</h2></section>
+<section class="gray">
+    <div class="map">
+        
+    </div>
+</section>
+
+
+
+
+<section class="thanks"><div class="tint"><h1>Gracias por su atención</h1></div></section>
+<section class="gray"><div><img src="img/analytic-board-logo.png"></div></br><div><h2>leonardocongote@ingeniosolido.com</br>@leocongote</h2><span class="short_s-text">
+<a href="http://www.ingeniosolido.com">http://www.ingeniosolido.com</a>
+</br>
+<a href="http://analyticboard.com/">http://analyticboard.com/</a>
+</span>
+</div></br><div class="bt-right"><img src="img/ingenio-solido-logo.png"></div>
+</section>
+
+</article>
+<script src="bower_components/bespoke.js/dist/bespoke.min.js"></script>
+<script src="bower_components/bespoke-bullets/dist/bespoke-bullets.min.js"></script>
+<script src="bower_components/bespoke-scale/dist/bespoke-scale.min.js"></script>
+<script src="bower_components/bespoke-hash/dist/bespoke-hash.min.js"></script>
+<script src="bower_components/bespoke-progress/dist/bespoke-progress.min.js"></script>
+<script src="bower_components/bespoke-state/dist/bespoke-state.min.js"></script>
+<script src="bower_components/prism/prism.js"></script>
+<script src="scripts/crossfilter.v1.min.js"></script>
+<script src="scripts/d3.v3.min.js"></script>
+<script src="scripts/queue.v1.min.js"></script>
+<script src="scripts/topojson.js"></script>
+<script src="scripts/main.js"></script>
+<script src="scripts/main_mapa.js"></script>
+<script src="scripts/cross-demo.js"></script>
+</body>
+
+</html>
