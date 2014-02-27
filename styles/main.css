@@ -362,6 +362,12 @@ a {
   -moz-background-size: cover;
   background-size: cover;
 }
+.mapa1 {
+  background-image: url("../img/Latitud_longitud.gif");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
 .hardware {
   background-image: url("../img/hardware.jpg");
   -webkit-background-size: cover;

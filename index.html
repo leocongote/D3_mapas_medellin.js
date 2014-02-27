@@ -49,12 +49,34 @@
         
     </div>
 </section>
+<section class="gray"><h1><span class="med_s-text"> Ogr2ogr y topojson</h1><h2>
+</h2><code class="language-javascript"><pre>
+    //para filtrar el archivo .shp y convertir en GeoJson
+    ogr2ogr -f GeoJSON -where "CONTINENT IN ('South America')" subunits.json ne_10m_admin_0_map_subunits.shp
 
+    //Convertir en TopoJson
+    topojson --id-property SU_A3 -p name=NAME -p name -p id=ADM0_A3 -p id -o uk.json  subunits.json
+
+</pre></code></section>
+<section class="mapa1"><h1><span class="med_s-text"> Código</h1><h2>
+</h2><code class="language-javascript"><pre>
+//creo la función que convertira el topojson en la proyección albers
+var projection = d3.geo.equirectangular()
+    //longitud(hor)-latitud(ver)
+    .center([-85, -2])
+    //.rotate([0, 0])
+    .scale(260)
+    .scale(260)
+    .translate([width / 2, height / 2]);
+//variable que crea el path
+var path = d3.geo.path()
+    .projection(projection);
+</pre></code></section>
 
 
 
 <section class="thanks"><div class="tint"><h1>Gracias por su atención</h1></div></section>
-<section class="gray"><div><img src="img/analytic-board-logo.png"></div></br><div><h2>leonardocongote@ingeniosolido.com</br>@leocongote</h2><span class="short_s-text">
+<section class="gray"><div><img src="img/analytic-board-logo.png"></div></br><div><h2></br>@leocongote</br>@analyticboard</h2><span class="short_s-text">
 <a href="http://www.ingeniosolido.com">http://www.ingeniosolido.com</a>
 </br>
 <a href="http://analyticboard.com/">http://analyticboard.com/</a>
